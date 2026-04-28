@@ -17,11 +17,11 @@ header{
 
 }
 .logo{
-
-  font-family: "Pacifico", cursive;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 30px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 5px;
+  margin-top: -10;
 }
 
 nav{
@@ -132,6 +132,8 @@ section{
 }
 
 footer{
+  text-align: center;
+  padding: 20px;
   background-color:#292938;
   color:white;
 }
@@ -139,30 +141,50 @@ footer{
 
 /* HERO Home page */
 .hero-homepage{
-  height: 30vh;
+  min-height: 70vh;
+  flex-direction: column;
   width: 100%;
-  background-image:url("images/isle.jpg");
+  align-items: flex-start;
+  padding-left: 5%;
+  background-image:url("images/chairs_3.jpg");
   background-position: center;
   background-size: cover;
   margin-bottom:40px;
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   align-content: center;
   overflow: scroll;
 }
+.hero-text{
+  margin-top: 200px;
+}
+
 .hero-homepage div {
 	text-align:center;
   width: 80%;
-  margin: 10px auto;
+  /* margin: 10px auto; */
   padding: 10px;
 }
 
+
 .hero-heading{
+  font-family: "Candal", sans-serif;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 1.1;
+  text-align: left;
+  text-transform: capitalize;
+  font-style: normal;
   color: #ffffff;
-  margin-bottom: 10px;
-  }
+  margin-bottom: 20px;
+}
 .hero-subhead{
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: left;
+  max-width: 500px;
   color: #fff;
+  margin-top: 30px;
   margin-top: 10px;
 }
 .hero-button{
@@ -176,10 +198,16 @@ footer{
 /* START NAV STYLES */
 
 #navbar {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  height: 150px;
   min-height: 70px;
   grid-auto-flow: column;
-  background-color: #fcfcfc;
+  background-color: #dfa372b9;
 /*   grid-gap: 1.5em; */
   padding: 0 40px;
   -webkit-box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
@@ -249,12 +277,58 @@ footer{
 
 /* START FOOTER STYLES-------- */
 footer{
-  padding-top:30px;
-  padding-bottom:30px;
+  background-color: #573e2a;
+  padding-top: 60px 0;
+  color: #ffffff;
+  font-family: sans-serif;
+  text-align: left;
+}
+.footer-container{
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.footer-collum h3 {
+  font-size: 20px;
+  margin-bottom: 25px;
+  font-weight: 600;
+  position: relative;
+}
+.footer-collum h3::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  background-color: rgba(158, 91, 61, 0.3);
+  height: 2px;
+  width: 40px;
+}
+.footer-collum ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+
+}
+.footer-collum ul li {
+  margin-top: 12px;
+}
+.footer-collum ul li a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+.footer-collum ul li a:hover {
+  color: #ffffff;
+  padding-left: 5px;
 }
 .footer-wrapper{
   width: 90%;
   margin: auto;
+  text-align: center;
+  margin-top: 20px;
 }
 footer .fa{
   color: white;
@@ -291,9 +365,12 @@ footer .fa{
   }
 
   #links {
-    display: grid;
-    justify-content: right;
+
+    display: flex;
+    justify-content: center;
     align-content: center;
+    gap: 30px;
+    margin-top: 15px;
     grid-auto-flow: column;
     /*   grid-gap: 1.5em; */
   }
@@ -304,11 +381,13 @@ footer .fa{
     text-transform: uppercase;
     font-weight: bold;
     padding:20px 10px;
+    font-family: "Geologica", sans-serif;
   }
 
   #links a:hover {
-    color:blue;
-    background: #e9ebee;
+    color:rgb(149, 235, 236);
+    background: none;
+    transition: 0.3s ease-in;
   }
     /* END Nav styles ----------------- */
 
