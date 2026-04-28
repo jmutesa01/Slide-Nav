@@ -14,14 +14,13 @@ h2{
 }
 
 header{
-
+background-color: #dfa372b9;
 }
 .logo{
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 5px;
-  margin-top: -10;
+width: 150px;
+margin: auto;
+display: block;
+padding-top: 20px;
 }
 
 nav{
@@ -110,7 +109,7 @@ section{
     
 }
 .image-on-left{
-  height: 200px;
+  /* height: 200px; */
   width: 90%;
   margin: auto;
   display: block;
@@ -145,8 +144,9 @@ footer{
   flex-direction: column;
   width: 100%;
   align-items: flex-start;
-  padding-left: 5%;
-  background-image:url("images/chairs_3.jpg");
+  background-image:
+  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  url("images/chairs_3.jpg");
   background-position: center;
   background-size: cover;
   margin-bottom:40px;
@@ -161,8 +161,8 @@ footer{
 
 .hero-homepage div {
 	text-align:center;
-  width: 80%;
-  /* margin: 10px auto; */
+  width: 90%;
+  margin: 100px auto;
   padding: 10px;
 }
 
@@ -170,7 +170,7 @@ footer{
 .hero-heading{
   font-family: "Candal", sans-serif;
   font-weight: 800;
-  font-size: 80px;
+  font-size: 2.3rem;
   line-height: 1.1;
   text-align: left;
   text-transform: capitalize;
@@ -179,7 +179,7 @@ footer{
   margin-bottom: 20px;
 }
 .hero-subhead{
-  font-size: 18px;
+  font-size: 1.3rem;
   line-height: 1.6;
   text-align: left;
   max-width: 500px;
@@ -188,8 +188,9 @@ footer{
   margin-top: 10px;
 }
 .hero-button{
-  padding:5px 8px;
+  padding:8px 12px;
   font-size: 1em;
+  border-radius: 15px 0;
   border:0;
 } 
 
@@ -198,14 +199,15 @@ footer{
 /* START NAV STYLES */
 
 #navbar {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   padding: 20px 0;
   justify-content: flex-end;
   align-items: center;
-  position: relative;
-  height: 150px;
-  min-height: 70px;
+  justify-items: right;
+  /* position: relative; */
+  /* height: 150px; */
+  /* min-height: 70px; */
   grid-auto-flow: column;
   background-color: #dfa372b9;
 /*   grid-gap: 1.5em; */
@@ -215,13 +217,12 @@ footer{
   box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
 }
 
-#logo {
+/* #logo {
   display: grid;
-  grid-template-columns: 1fr 30px;
-  /* First col is flexable width, the next is a pixil amount. It will push the icon to the right of the screen. */
+  grid-template-columns: 1fr 1fr;
   justify-content: space-between;
 
-}
+} */
 
 /* Hide desktop links on mobile */
 #links {
@@ -278,7 +279,7 @@ footer{
 /* START FOOTER STYLES-------- */
 footer{
   background-color: #573e2a;
-  padding-top: 60px 0;
+  padding: 40px 0;
   color: #ffffff;
   font-family: sans-serif;
   text-align: left;
@@ -287,6 +288,7 @@ footer{
   max-width: 1100px;
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   padding: 0 20px;
 }
@@ -350,6 +352,10 @@ footer .fa{
     section{
         
     }
+    .footer-container{
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
     /* HERO Homepage */
 
     /* HERO contact page */
@@ -362,6 +368,10 @@ footer .fa{
   /* Nav styles ----------------- */
   .mobile-btn {
     display: none;
+  }
+
+  #navbar {
+  justify-items: center;
   }
 
   #links {
