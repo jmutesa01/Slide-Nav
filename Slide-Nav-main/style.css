@@ -22,10 +22,6 @@ header{
   transform: translateX(-50%);
   top: 5px;
   margin-top: -10;
-  font-family: "Pacifico", cursive;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 30px;
 }
 
 nav{
@@ -145,10 +141,10 @@ footer{
 
 /* HERO Home page */
 .hero-homepage{
-  min-height: 80vh;
+  min-height: 70vh;
   flex-direction: column;
   width: 100%;
-  background-image:url("images/isle.jpg");
+  background-image:url("images/chairs_3.jpg");
   background-position: center;
   background-size: cover;
   margin-bottom:40px;
@@ -157,19 +153,25 @@ footer{
   align-content: center;
   overflow: scroll;
 }
+.hero-text{
+  margin-top: 200px;
+}
+
 .hero-homepage div {
 	text-align:center;
   width: 80%;
-  margin: 10px auto;
+  /* margin: 10px auto; */
   padding: 10px;
 }
 
+
 .hero-heading{
-  font-family: "Pacifico", cursive;
- 
+  font-family: "Candal", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   color: #20191e;
   margin-bottom: 10px;
-  }
+}
 .hero-subhead{
   color: #fff;
   margin-top: 10px;
@@ -186,10 +188,12 @@ footer{
 
 #navbar {
   display: flex;
+  flex-direction: column;
+  padding: 20px 0;
   justify-content: flex-end;
   align-items: center;
   position: relative;
-  height: 80px;
+  height: 150px;
   min-height: 70px;
   grid-auto-flow: column;
   background-color: #dfa372b9;
@@ -350,9 +354,12 @@ footer .fa{
   }
 
   #links {
-    display: grid;
-    justify-content: right;
+
+    display: flex;
+    justify-content: center;
     align-content: center;
+    gap: 30px;
+    margin-top: 15px;
     grid-auto-flow: column;
     /*   grid-gap: 1.5em; */
   }
@@ -363,11 +370,13 @@ footer .fa{
     text-transform: uppercase;
     font-weight: bold;
     padding:20px 10px;
+    font-family: "Geologica", sans-serif;
   }
 
   #links a:hover {
-    color:blue;
-    background: #e9ebee;
+    color:rgb(149, 235, 236);
+    background: none;
+    transition: 0.3s ease-in;
   }
     /* END Nav styles ----------------- */
 
