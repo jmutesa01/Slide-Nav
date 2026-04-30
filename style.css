@@ -17,7 +17,7 @@ h2{
 }
 
 header{
-background-color:#5a412e ;
+background-color: bisque ;
 }
 .logo{
 width: 150px;
@@ -26,6 +26,18 @@ display: block;
 padding-top: 20px;
 }
 
+button{
+  padding: 15px 22px;
+  font-size: 1.2em;
+  border-radius: 15px 0;
+  border: 0;
+  background-color: bisque;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+button:hover{
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
 nav{
 
 }
@@ -37,7 +49,7 @@ nav a{
   color: rgba(58, 58, 58, 1);
   margin: auto;
   display: block;
-  width: 80%;
+  width: 85%;
   font-family: "Aleo", serif;
   font-weight: 400;
   font-style: normal;
@@ -46,6 +58,9 @@ nav a{
 }
 p{
 
+}
+.question{
+text-align: center;
 }
 p,table{
   margin-top: 13px;
@@ -74,9 +89,13 @@ figcaption{
 }
 
 .why-us-content {
+  width: 85%;
   flex: 1;
-  text-align: center;
+  text-align: left;
   margin: auto;
+}
+.why-us-content button{
+  text-align: center;
 }
 
   .why-us-text p {
@@ -175,67 +194,69 @@ footer{
 /* HERO Home page */
 .hero-homepage{
   min-height: 70vh;
-  flex-direction: column;
   width: 100%;
-  align-items: flex-start;
   background-image:
   linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
   url("images/chairs_3.jpg");
   background-position: center;
   background-size: cover;
-  margin-bottom:40px;
+  margin-bottom: 40px;
   display: flex;
-  /* flex-wrap: wrap; */
-  align-content: center;
-  overflow: scroll;
-}
-.hero-text{
-  margin-top: 200px;
-}
-
-.hero-homepage div {
-	/* text-align:center; */
-  width: 90%;
-  margin: 100px auto;
-  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 
-.hero-heading{
-  font-family: "Candal", sans-serif;
-  font-weight: 800;
-  font-size: 2.3rem;
-  line-height: 1.1;
-  text-align: left;
-  text-transform: capitalize;
-  font-style: normal;
-  color: #ffffff;
-  margin-bottom: 20px;
-}
-.hero-subhead{
-  font-size: 1.3rem;
-  line-height: 1.6;
-  text-align: left;
-  max-width: 500px;
-  color: #fff;
-  margin-top: 30px;
-  margin-top: 10px;
-}
-.hero-button{
-  padding:8px 12px;
-  font-size: 1em;
-  border-radius: 15px 0;
-  border:0;
-  background-color: bisque;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  transition: 0.3s ease;
-} 
-.hero-button:hover{
-  transform: translateY(-2px);
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+/* story section */
+.story-section {
+    height: 75vh;
+    width: 100%;
+    background-image: url('images/candle.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-/* HERO contact page */
+.story-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .story-content{
+    width: 90%;
+    margin: auto;
+  }
+
+  .story-content h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-style: italic;
+    font-size: 4.5rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+  }
+
+  .story-content p {
+      font-size: 1.2rem;
+      color: #f0f0f0;
+      margin-bottom: 30px;
+}
+
+
+
+  #links a {
+    text-decoration: none;
+    color: #ccc6c6;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding:20px 10px;
+    font-family: "Geologica", sans-serif;
+  }
 
 /* START NAV STYLES */
 
@@ -250,7 +271,7 @@ footer{
   /* height: 150px; */
   /* min-height: 70px; */
   grid-auto-flow: column;
-  background-color:#624329 ;
+  background-color: rgb(229, 190, 143) ;
 /*   grid-gap: 1.5em; */
   padding: 0 40px;
   -webkit-box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
@@ -315,6 +336,41 @@ footer{
   margin-left: 50px;
 }
 
+.split-row {
+    display: flex;
+    height: 70vh;
+    width: 100%;
+    margin-top: 30px;
+    flex-direction: column;
+  }
+
+  .split-text-side {
+    flex: 1;
+    background-color: #91837a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    color: white;
+  }
+
+  .inner-content {
+    max-width: 500px;
+  }
+
+  .inner-quote {
+    font-size: 2.0rem;
+    line-height: 1.3;
+    font-family: 'Serif', Georgia, serif;
+  }
+
+  .split-image-side {
+    flex: 1;
+    background-image: url('images/couch.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
 /* STOP NAV STYLES ------------*/
 
 /* START FOOTER STYLES-------- */
@@ -339,14 +395,14 @@ footer{
   font-weight: 600;
   position: relative;
 }
-.footer-collum h3::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  background-color: rgba(158, 91, 61, 0.3);
-  height: 2px;
+.footer-collum hr {
+
+  border: rgba(158, 91, 61, 0.3) solid 2px;
   width: 40px;
+  text-align: left;
+}
+.footer-collum{
+  width: 30%;
 }
 .footer-collum ul {
   list-style: none;
@@ -469,96 +525,24 @@ footer .fa{
     margin-bottom: 20px;
   }
 
-  .cta-question {
+  .question {
     font-style: italic;
     margin: 30px 0;
     color: #444;
   }
-
-
-
-  .split-row {
+  .split-row{
     display: flex;
-    height: 70vh;
-    width: 100%;
-    margin-top: 30px;
+    flex-direction: row;
   }
 
-  .split-text-side {
-    flex: 1;
-    background-color: #91837a;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 60px;
-    color: white;
+
+
+  
+
+  
   }
 
-  .inner-content {
-    max-width: 500px;
-  }
-
-  .inner-quote {
-    font-size: 2.0rem;
-    line-height: 1.3;
-    font-family: 'Serif', Georgia, serif;
-  }
-
-  .split-image-side {
-    flex: 1;
-    background-image: url('images/couch.jpg');
-    background-size: cover;
-    background-position: center;
-  }
-
-  .story-section {
-    position: relative;
-    height: 75vh;
-    width: 100%;
-    background-image: url('images/candle.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-  }
-
-  .story-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.3);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .story-content h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 4.5rem;
-    color: #ffffff;
-    margin-bottom: 10px;
-    letter-spacing: 1px;
-  }
-
-  .story-content p {
-      font-size: 1.2rem;
-      color: #f0f0f0;
-      margin-bottom: 30px;
-}
-
-
-
-  #links a {
-    text-decoration: none;
-    color: #ccc6c6;
-    text-transform: uppercase;
-    font-weight: bold;
-    padding:20px 10px;
-    font-family: "Geologica", sans-serif;
-  }
-
+  
   #links a:hover {
     color:rgb(224, 159, 103);
     background: none;
@@ -566,4 +550,4 @@ footer .fa{
   }
     /* END Nav styles ----------------- */
 
-}
+
