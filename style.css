@@ -14,10 +14,12 @@ h2{
   text-align: center;
   font-size: 65px;
   font-family: 'Playfair Display', serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 header{
-background-color: bisque ;
+background-color: #E8BC99 ;
 }
 .logo{
 width: 150px;
@@ -172,6 +174,10 @@ section{
   clear: both;
   content:"";
 }
+.why-us-content h2 {
+  color: #111;
+  font-size: 40px;
+}
 
 .image-on-left img{
   float:left;
@@ -182,6 +188,57 @@ section{
   margin-right:30px;
   margin-bottom:30px;
 }
+
+
+
+.how-it-works {
+    padding: 20px 20px;
+    margin-top: 40px;
+    text-align: center;
+    background-color: #91837a;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #ebe9e9;
+}
+
+.steps-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.step-image img {
+    width: 100%;
+    max-width: 350px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    margin: 0 auto 20px;
+    border-radius: 4px;
+}
+
+.step h3 {
+    font-family: 'Geologica';
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: bisque;
+}
+
+.step p {
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    line-height: 1.6;
+    color: #ffffff;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+
+
 
 footer{
   text-align: center;
@@ -251,7 +308,7 @@ footer{
 
   #links a {
     text-decoration: none;
-    color: #ccc6c6;
+    color: #554b4b;
     text-transform: uppercase;
     font-weight: bold;
     padding:20px 10px;
@@ -271,7 +328,7 @@ footer{
   /* height: 150px; */
   /* min-height: 70px; */
   grid-auto-flow: column;
-  background-color: rgb(229, 190, 143) ;
+  background-color:#E2AA7D  ;
 /*   grid-gap: 1.5em; */
   padding: 0 40px;
   -webkit-box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
@@ -309,7 +366,7 @@ footer{
   z-index: 1;
   top: 0;
   right: 0;
-  background-color: #111;
+  background-color: #E2AA7D;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -489,6 +546,10 @@ footer .fa{
     padding-top: 20px;
   }
 
+  .why-us-section h2 {
+    font-style: italic;
+  }
+
   .why-us-container {
     display: flex;
     align-items: center;
@@ -510,10 +571,15 @@ footer .fa{
     text-align: center;
 }
 
+  .why-us-content p {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+  }
+
   .section-title {
   font-family: 'Playfair Display', serif;
   font-size: 48px;
-  color: #333;
+  color: #fffefe;
   margin-bottom: 40px;
   font-weight: 400;
 }
@@ -536,11 +602,27 @@ footer .fa{
   }
 
 
-
-  
-
-  
+  .how-it-works {
+      padding: 100px 10%;
+      background-color:#91837a ;
+      padding-top: 10px;
   }
+
+
+  .steps-container {
+      flex-direction: row;
+      align-items: flex-start;
+  }
+
+  .step {
+      flex: 1;
+
+  .step-image img {
+      max-width: 100%;
+  }
+}
+
+
 
   
   #links a:hover {
@@ -548,6 +630,9 @@ footer .fa{
     background: none;
     transition: 0.3s ease-in;
   }
+
+
+}
     /* END Nav styles ----------------- */
 
 
